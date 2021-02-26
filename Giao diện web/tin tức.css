@@ -1,0 +1,224 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.full {
+   /* background-color: lightblue;*/
+    background: url("https://res.cloudinary.com/vnskins/image/upload/q_auto:eco/background.png") repeat center center fixed;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+/*==Style cho menu===*/
+#menu ul {
+    /* background: #1F568B;*/
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 500px;
+    font-size:20px;
+}
+
+#menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+    #menu a:hover {
+        background: #F1F1F1;
+        color: #333;
+    }
+
+/*==Dropdown Menu==*/
+.sub-menu {
+    display: none;
+}
+
+#menu li {
+    position: relative;
+}
+
+    #menu li:hover .sub-menu {
+        display: block;
+    }
+
+.sub-menu li {
+    margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-menu > ul {
+    display: none !important;
+}
+
+.Đki {
+    position: absolute;
+    top: 10px;
+    left: 1435px;
+    color: white;
+}
+
+.dangnhap {
+    position: absolute;
+    top: 10px;
+    left: 1310px;
+    color: white;
+}
+
+.chuchay {
+    width: 990px;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    color: #ffd800;
+}
+
+/*
+footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 2180px;
+    height: 400px;
+    background-color: #212121;
+}
+
+    .footer > div {
+        width: 339px;
+        margin: 20px;
+        color: black;
+        text-align: center;
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+.footer1 {
+    align-self: center;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    left: -40px;
+}
+
+.form-group1 {
+    width: 280px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 43.2px;
+    left: 1388px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 2580px;
+    height: 30px;
+    background-color: black;
+}
+
+    .footer2 > div {
+        width: 1476px;
+        margin: 20px;
+        color: black;
+    }
+
+.fb {
+    background-color: #0b9ef8;
+}
+
+
+/*
+nội dung*/
+.navbar-left img {
+    height: 50px;
+    position: absolute;
+}
+
+.navbar-right {
+    width: 130px;
+    position: absolute;
+    top: 52px;
+    right: 120px;
+}
+
+.container-fluid {
+    position: relative;
+    top: 400px;
+}
+
+.carousel {
+    position: relative;
+    top: -10px;
+    left: 20px;
+    width: 880px;
+}
+
+.container-fluid-1 {
+    position: absolute;
+    top: 316px;
+    left: 940px;
+}
+
+.container-fluid-2 {
+    position: absolute;
+    top: 370px;
+    left: 1220px;
+    width: 370px;
+}
+/*backtop*/
+.back-to-top {
+    position: fixed;
+    top: auto;
+    left: 1400px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 32px;
+    opacity: 0.8;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+    .back-to-top:hover {
+        opacity: 1;
+    }
+
+/*.flex-container {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+    .flex-container > div {
+        background-color: white;
+        width: 220px;
+        height: 220px;
+        margin: 8px;
+        color: white;
+        text-align: left;
+        line-height: 25px;
+        font-size: 30px;
+        border-radius: 10px;
+        position: relative;
+        left: 1000px;
+        top:-440px;
+    }
+*/

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{AAEAF3B3-C6DF-4B9F-B813-2CDFC472DBCB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Giao_diện_web</RootNamespace>
+    <AssemblyName>Giao diện web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44395</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Giao diện web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Giao diện web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.css" />
+    <Content Include="admin.html" />
+    <Content Include="admin.js" />
+    <Content Include="bangdau.js" />
+    <Content Include="bảng dấu.css" />
+    <Content Include="bảng đấu.html" />
+    <Content Include="edit_admin.html" />
+    <Content Include="h-d bang đấu.css" />
+    <Content Include="img admin\arrow-down.svg" />
+    <Content Include="img admin\arrow-right-black.svg" />
+    <Content Include="img admin\arrow-right.svg" />
+    <Content Include="img admin\ellipse1.svg" />
+    <Content Include="img admin\icon-book.svg" />
+    <Content Include="img admin\icon-check.svg" />
+    <Content Include="img admin\icon-dashboard.svg" />
+    <Content Include="img admin\icon-edit.svg" />
+    <Content Include="img admin\icon-email.svg" />
+    <Content Include="img admin\icon-facebook.svg" />
+    <Content Include="img admin\icon-logout.svg" />
+    <Content Include="img admin\icon-pencil.svg" />
+    <Content Include="img admin\icon-return.svg" />
+    <Content Include="img admin\icon-settings.svg" />
+    <Content Include="img admin\icon-tag.svg" />
+    <Content Include="img admin\icon-trash-black.svg" />
+    <Content Include="img admin\icon-trash.svg" />
+    <Content Include="img admin\icon-twitter.svg" />
+    <Content Include="img admin\icon-user.svg" />
+    <Content Include="img admin\icon-users.svg" />
+    <Content Include="img admin\icon-x.svg" />
+    <Content Include="img admin\logo.svg" />
+    <Content Include="img lm\132546-1273317-797376-15016-full-1-orig-1-article_m-1.jpg" />
+    <Content Include="img lm\d8kJxNUFezh93mFoiKJnDQ.jpg" />
+    <Content Include="img lm\lien-minh-huyen-thoai-can-canh-thong-thao-tuong-cap-6-va-7-dep-trai-nhung-khong-mai-duoc-ra-skin.jpg" />
+    <Content Include="img lm\lien-minh-huyen-thoai-giao-dien-skin-nidalee-wukong-caitlyn-morgana-tuyet-dep-chao-tet-am.jpg" />
+    <Content Include="img lm\maxresdefault.jpg" />
+    <Content Include="img lm\Nhan-Yone-LMHT-1.jpg" />
+    <Content Include="img lm\nhom-trang-phuc-quan-quan-184675.jpg" />
+    <Content Include="img lm\nhom-trang-phuc-sieu-pham-184676.jpg" />
+    <Content Include="img lm\nhom-trang-phuc-toi-thuong-184664.jpg" />
+    <Content Include="img lm\nhom-trang-phuc-valentine-184679.jpg" />
+    <Content Include="img lm\nhung-trang-phuc-dep-nhat-cua-vi-tuong-ahri-trong-lien-minh-huyen-thoai1-2154.jpg" />
+    <Content Include="img lm\skin-annie-2.jpg" />
+    <Content Include="img lm\tải xuống %282%29.jpg" />
+    <Content Include="img lm\unnamed.jpg" />
+    <Content Include="img lm\yas.jpg" />
+    <Content Include="img lq\41c467a0acbcef1f9d4e7f95ef692d7f.png" />
+    <Content Include="img lq\5da840d1c82ed3adeff03a709060fe89.jpg" />
+    <Content Include="img lq\Arena-of-Valor_AoVxSwordArtOnline-1-2-1024x576.jpg" />
+    <Content Include="img lq\f5d693090565df2d0010d25d1daa0933.jpg" />
+    <Content Include="img lq\images %2810%29.jpg" />
+    <Content Include="img lq\images %2811%29.jpg" />
+    <Content Include="img lq\images %2812%29.jpg" />
+    <Content Include="img lq\images %2813%29.jpg" />
+    <Content Include="img lq\images %2814%29.jpg" />
+    <Content Include="img lq\images %282%29.jpg" />
+    <Content Include="img lq\images %283%29.jpg" />
+    <Content Include="img lq\images %284%29.jpg" />
+    <Content Include="img lq\images %285%29.jpg" />
+    <Content Include="img lq\images %286%29.jpg" />
+    <Content Include="img lq\images %287%29.jpg" />
+    <Content Include="img lq\images %288%29.jpg" />
+    <Content Include="img lq\images %289%29.jpg" />
+    <Content Include="img lq\lien-quan-mobile-garena-tang-ca-server-skin-cua-murad-krixi-astr-cce4d0.jpg" />
+    <Content Include="img lq\nata.jpg" />
+    <Content Include="img lq\photo-1-15628695842031524450028.jpg" />
+    <Content Include="img lq\Qi-lien-quan-mobile-gameviet-011.jpg" />
+    <Content Include="img lq\tải xuống %281%29.jpg" />
+    <Content Include="img lq\tải xuống.jpg" />
+    <Content Include="img lq\Volkath-lien-quan-mobile-gameviet-01.jpg" />
+    <Content Include="img lq\yorn-long-than-soai.jpg" />
+    <Content Include="img sp\140fx140f %281%29.png" />
+    <Content Include="img sp\140fx140f %2810%29.png" />
+    <Content Include="img sp\140fx140f %2811%29.png" />
+    <Content Include="img sp\140fx140f %2813%29.png" />
+    <Content Include="img sp\140fx140f %2814%29.png" />
+    <Content Include="img sp\140fx140f %2815%29.png" />
+    <Content Include="img sp\140fx140f %2816%29.png" />
+    <Content Include="img sp\140fx140f %2817%29.png" />
+    <Content Include="img sp\140fx140f %2818%29.png" />
+    <Content Include="img sp\140fx140f %2819%29.png" />
+    <Content Include="img sp\140fx140f %282%29.png" />
+    <Content Include="img sp\140fx140f %2820%29.png" />
+    <Content Include="img sp\140fx140f %283%29.png" />
+    <Content Include="img sp\140fx140f %284%29.png" />
+    <Content Include="img sp\140fx140f %285%29.png" />
+    <Content Include="img sp\140fx140f %286%29.png" />
+    <Content Include="img sp\140fx140f %287%29.png" />
+    <Content Include="img sp\140fx140f %288%29.png" />
+    <Content Include="img sp\140fx140f %289%29.png" />
+    <Content Include="img sp\140fx140f.png" />
+    <Content Include="img tin tức\01-TrueDmg-800x450.jpg" />
+    <Content Include="img tin tức\217-Halloween-800x450.jpg" />
+    <Content Include="img tin tức\90-1-1024x576.jpg" />
+    <Content Include="img tin tức\a9fdae5d31c9a4e71a2ea643755c23db5f89828143393.jpg" />
+    <Content Include="img tin tức\banner.png" />
+    <Content Include="img tin tức\bba4ed3432c9d0a968bdd2e9701e9db75f924c8154238.jpg" />
+    <Content Include="img tin tức\d4fbdaa7f1c651ac4c229c9cf159eca05f8e7761b0149.jpg" />
+    <Content Include="img tin tức\e3d75a3664c2c7e821f0d7531912059f5f926f510912c.jpg" />
+    <Content Include="img tin tức\header.jpg" />
+    <Content Include="img tin tức\Hinh-Nen-Lien-Quan-Mobile-Wallpaper-Cho-Iphone-Android.jpg" />
+    <Content Include="img tin tức\lm10tuoi_baiviet.jpg" />
+    <Content Include="img tin tức\lmhttc.jpg" />
+    <Content Include="img tin tức\maxresdefault.jpg" />
+    <Content Include="img tin tức\photo-1-1600223758409109961976.jpg" />
+    <Content Include="img tin tức\su-kien-lien-minh-02-09-diem-danh-nhan-qua-hap-danthumb-640x360.jpg" />
+    <Content Include="img tin tức\unnamed.jpg" />
+    <Content Include="img tin tức\unnamed.png" />
+    <Content Include="imgg\d.jpg" />
+    <Content Include="imgg\images %2815%29.jpg" />
+    <Content Include="imgg\images %2816%29.jpg" />
+    <Content Include="imgg\images %2817%29.jpg" />
+    <Content Include="imgg\images %2818%29.jpg" />
+    <Content Include="imgg\logo.png" />
+    <Content Include="imgg\maxresdefault %281%29.jpg" />
+    <Content Include="img\127_hwkklr1lli3uqzfng1qa.jpg" />
+    <Content Include="img\256d9df3cc7e7f9b9d7ea749aa832105.jpg" />
+    <Content Include="img\Allain-Lien-Quan-Mobile-Tuong-Sat-Thu-Gameviet.mobi-4.png" />
+    <Content Include="img\avatar-avt5b92469aa7ce4_d5e45b114c9c3df6314747cb9524c132.jpg" />
+    <Content Include="img\background-header.png" />
+    <Content Include="img\hinh-nen-ken-kaneki-17.jpg" />
+    <Content Include="img\hinh-nen-lien-minh-huyen-thoai-dep.jpg" />
+    <Content Include="img\icon-commitment.png" />
+    <Content Include="img\icon-global.png" />
+    <Content Include="img\icon-phone.png" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\IMG_1945.JPG" />
+    <Content Include="img\logo-con-meo-01-removebg-preview.png" />
+    <Content Include="img\tải xuống.jpg" />
+    <Content Include="insert_admin.html" />
+    <Content Include="insert_category.html" />
+    <Content Include="insert_coupon.html" />
+    <Content Include="insert_product.html" />
+    <Content Include="insert_p_category.html" />
+    <Content Include="login.js" />
+    <Content Include="nạp tien.css" />
+    <Content Include="nạp tiền.html" />
+    <Content Include="sản phẩm.css" />
+    <Content Include="sản phẩm.html" />
+    <Content Include="thanh toán.css" />
+    <Content Include="Thanh toán.html" />
+    <Content Include="tin tức.css" />
+    <Content Include="tin tức.html" />
+    <Content Include="trang chủ.css" />
+    <Content Include="trang chủ.html" />
+    <Content Include="trangchu2.css" />
+    <Content Include="view_admins.html" />
+    <Content Include="view_category.html" />
+    <Content Include="view_coupons.html" />
+    <Content Include="view_customers.html" />
+    <Content Include="view_orders.html" />
+    <Content Include="view_product.html" />
+    <Content Include="view_p_category.html" />
+    <Content Include="Web.config" />
+    <Content Include="đăng nhập.css" />
+    <Content Include="Đăng nhập.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\HaoGaming - Web Deploy.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57157</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44395/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,399 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi,en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+    <title>HaoGaming</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+    <link href="nạp tien.css" rel="stylesheet" />
+    <LINK REL="SHORTCUT ICON" HREF="imgg/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" rel="stylesheet" />
+    <link href="/content/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="/content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/content/datatable/datatables.min.css" rel="stylesheet" />
+    <link href="/content/site.min.css?v=7" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114724276-1"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/scripts/define.js"></script>
+</head>
+<body class="full">
+
+    <img src="img/background-header.png" height="100" width="1519" />
+    <div id="menu">
+        <a href="trang chủ.html">
+            <img src="img/logo-con-meo-01-removebg-preview.png" width="450" height="200" style="position:absolute; top:-40px;left:-80px;" />
+        </a>
+        <div class="chay">
+            <p class=" chuchay">
+                <marquee>
+                    <h3>
+                        ↝ Welcome To HaoGaming's Shop! ↜
+                    </h3>
+                </marquee>
+
+            </p>
+
+            <div class="dangnhap">
+                <a href="Đăng nhập.html"> <h3>Đăng Nhập</h3></a>
+
+            </div>
+            <div class="Đki">
+                <a href="Đăng nhập.html"> <h3> Đăng Kí</h3></a>
+            </div>
+        </div>
+        <hr color="#ebe717" style="position:absolute;top:30px;width:1180px;left:300px;" />
+        <center>
+            <ul>
+
+                <li><a href="trang chủ.html"><b>Trang chủ</b></a></li>
+                <li><a href="bảng đấu.html"><b>Lịch Đấu</b></a></li>
+                <li>
+                    <a href="#"><b>Đặt Mua</b></a>
+                    
+                </li>
+                <li><a href="nạp tiền.html"><b>Nạp Tiền</b></a></li>
+                <li><a href="tin tức.html"><b>Tin Tức</b></a></li>
+                <li><a href="admin.html"><b>Admin</b></a></li>
+            </ul>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+    <style>
+        .body-content {
+            padding: 0;
+            display: flex;
+        }
+    </style>
+    <div class="sidebar-content" style="margin-left:0;width:100%">
+        <div class="container paygate">
+            <br />
+            <h1 class="text-center ui teal header">Nạp tiền vào tài khoản</h1>
+            <div class="options">
+                <a href="#" class="eight wide tablet six wide computer column">
+                    <div class="ui blue segment paygate-box text-center raised ">
+                        <h3 class="ui blue header">Thẻ cào</h3>
+                    </div>
+                </a>
+                <a href="#" class="eight wide tablet six wide computer column">
+                    <div class="ui red segment paygate-box text-center raised ">
+                        <h3 class="ui red header">Ngân hàng</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ui grid centered">
+                <div class="column">
+                    <div class="ui blue segment">
+                        <form action="/paygate/chargecard" class="ui form" method="post" name="card" role="form">
+                            <input name="__RequestVerificationToken" type="hidden" value="1MXmUstu8z4k81T3isRKZDpVx4-PaeXgl3FfgsUr3MmwAzaYz3BYVAX_fW5GiGvpo8lBErCn3OAxaC3Ld9k2FSMPLzBDVBVjhxXIv_GVPOM1" />                    <div class="field">
+                                <div class="fields">
+                                    <div class="four wide field">
+                                        <label>Chọn nhà mạng:</label>
+                                        <select name="CardId" class="ui dropdown">
+                                            <option value="viettel">Viettel (35%)</option>
+                                            <option value="vina">Vina (25%)</option>
+                                            <option value="garena">Garena ≥ 50k (40%)</option>
+                                            <option value="mobi">Mobi (26%)</option>
+                                            <option value="zing">Zing (22%)</option>
+                                        </select>
+                                    </div>
+                                    <div class="four wide field">
+                                        <label>Mệnh giá:</label>
+                                        <select name="Amount" class="ui dropdown" placeholder="Mệnh giá" required>
+                                            <option value="">Chọn mệnh giá thẻ</option>
+                                            <option value="10000">
+                                                10.000đ
+                                                <i>(+5% Phí)</i>
+                                            </option>
+                                            <option value="20000">
+                                                20.000đ
+                                                <i>(+6% Phí)</i>
+                                            </option>
+                                            <option value="30000">
+                                                30.000đ
+                                                <i>(+6% Phí)</i>
+                                            </option>
+                                            <option value="50000">
+                                                50.000đ
+                                            </option>
+                                            <option value="100000">
+                                                100.000đ
+                                            </option>
+                                            <option value="200000">
+                                                200.000đ
+                                            </option>
+                                            <option value="300000">
+                                                300.000đ
+                                            </option>
+                                            <option value="500000">
+                                                500.000đ
+                                            </option>
+                                            <option value="1000000">
+                                                1.000.000đ
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="four wide field">
+                                        <label>Số seri:</label>
+                                        <input type="text" class="form-control" name="Seri" placeholder="Số seri in trên thẻ nạp" autocomplete="off" required />
+
+                                    </div>
+                                    <div class="four wide field">
+                                        <label>Mã thẻ:</label>
+                                        <input type="text" class="form-control" name="Pin" placeholder="Mã thẻ phía sau lớp bạc" autocomplete="off" required />
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="field note">
+                                <div class="ui message">
+                                    <div class="header">Lưu ý</div>
+                                    <ul class="list">
+                                        <li>Thẻ xử lý trong vòng 0-5 phút sẽ có kết quả.</li>
+                                        <li>Kiểm tra thông tin thẻ nạp trước khi gửi, sai mệnh giá sẽ mất thẻ.</li>
+                                        <li>Mọi thắc mắc về giao dịch thẻ nạp, vui lòng liên hệ ngay với <a href="trang chủ.html" target="_blank">Fanpage</a> để được hỗ trợ.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="field text-center">
+                                <button type="button" class="ui large blue button">Nạp thẻ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui segment ">
+                <h2 class="ui green header text-center">
+                    Bảng ví dụ nạp tiền thẻ cào
+                </h2>
+                <table class="ui blue celled table">
+                    <thead class="">
+                        <tr class="">
+                            <th rowspan="2" class="">Mệnh giá thẻ<br /></th>
+                            <th colspan="5" class="">Số tiền nhận được sau khi gửi thẻ</th>
+                        </tr>
+                        <tr class="">
+                            <th>Viettel<br />(Phí 30%)</th>
+                            <th>Vina<br />(Phí 26%)</th>
+                            <th>Garena ≥ 50k<br />(Phí 32%)</th>
+                            <th>Mobi<br />(Phí 26%)</th>
+                            <th>Zing<br />(Phí 22%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <tr class="">
+                            <td class="">
+                                10.000đ
+                                <i>(+6% Phí)</i>
+                            </td>
+                            <td data-type="viettel" data-amount="10000" data-value="6400">6.400đ</td>
+                            <td data-type="vina" data-amount="10000" data-value="6800">6.800đ</td>
+                            <td data-type="garena" data-amount="10000" data-value="6200">6.200đ</td>
+                            <td data-type="mobi" data-amount="10000" data-value="6800">6.800đ</td>
+                            <td data-type="zing" data-amount="10000" data-value="7200">7.200đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                20.000đ
+                                <i>(+6% Phí)</i>
+                            </td>
+                            <td data-type="viettel" data-amount="20000" data-value="12800">12.800đ</td>
+                            <td data-type="vina" data-amount="20000" data-value="13600">13.600đ</td>
+                            <td data-type="garena" data-amount="20000" data-value="12400">12.400đ</td>
+                            <td data-type="mobi" data-amount="20000" data-value="13600">13.600đ</td>
+                            <td data-type="zing" data-amount="20000" data-value="14400">14.400đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                30.000đ
+                                <i>(+6% Phí)</i>
+                            </td>
+                            <td data-type="viettel" data-amount="30000" data-value="19200">19.200đ</td>
+                            <td data-type="vina" data-amount="30000" data-value="20400">20.400đ</td>
+                            <td data-type="garena" data-amount="30000" data-value="18600">18.600đ</td>
+                            <td data-type="mobi" data-amount="30000" data-value="20400">20.400đ</td>
+                            <td data-type="zing" data-amount="30000" data-value="21600">21.600đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                50.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="50000" data-value="35000">35.000đ</td>
+                            <td data-type="vina" data-amount="50000" data-value="37000">37.000đ</td>
+                            <td data-type="garena" data-amount="50000" data-value="34000">34.000đ</td>
+                            <td data-type="mobi" data-amount="50000" data-value="37000">37.000đ</td>
+                            <td data-type="zing" data-amount="50000" data-value="39000">39.000đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                100.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="100000" data-value="70000">70.000đ</td>
+                            <td data-type="vina" data-amount="100000" data-value="74000">74.000đ</td>
+                            <td data-type="garena" data-amount="100000" data-value="68000">68.000đ</td>
+                            <td data-type="mobi" data-amount="100000" data-value="74000">74.000đ</td>
+                            <td data-type="zing" data-amount="100000" data-value="78000">78.000đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                200.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="200000" data-value="140000">140.000đ</td>
+                            <td data-type="vina" data-amount="200000" data-value="148000">148.000đ</td>
+                            <td data-type="garena" data-amount="200000" data-value="136000">136.000đ</td>
+                            <td data-type="mobi" data-amount="200000" data-value="148000">148.000đ</td>
+                            <td data-type="zing" data-amount="200000" data-value="156000">156.000đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                300.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="300000" data-value="210000">210.000đ</td>
+                            <td data-type="vina" data-amount="300000" data-value="222000">222.000đ</td>
+                            <td data-type="garena" data-amount="300000" data-value="204000">204.000đ</td>
+                            <td data-type="mobi" data-amount="300000" data-value="222000">222.000đ</td>
+                            <td data-type="zing" data-amount="300000" data-value="234000">234.000đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                500.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="500000" data-value="350000">350.000đ</td>
+                            <td data-type="vina" data-amount="500000" data-value="370000">370.000đ</td>
+                            <td data-type="garena" data-amount="500000" data-value="340000">340.000đ</td>
+                            <td data-type="mobi" data-amount="500000" data-value="370000">370.000đ</td>
+                            <td data-type="zing" data-amount="500000" data-value="390000">390.000đ</td>
+                        </tr>
+                        <tr class="">
+                            <td class="">
+                                1.000.000đ
+                            </td>
+                            <td data-type="viettel" data-amount="1000000" data-value="700000">700.000đ</td>
+                            <td data-type="vina" data-amount="1000000" data-value="740000">740.000đ</td>
+                            <td data-type="garena" data-amount="1000000" data-value="680000">680.000đ</td>
+                            <td data-type="mobi" data-amount="1000000" data-value="740000">740.000đ</td>
+                            <td data-type="zing" data-amount="1000000" data-value="780000">780.000đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="shop-notice" class="ui floating message hidden">
+
+    </div>
+    <div class="modal modal-new" id="modal-confirm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <input type="hidden" name="id" value="" />
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">Xác nhận nạp thẻ</h3>
+                </div>
+                <div class="modal-body form-horizontal">
+                    <p>Bạn muốn nạp thẻ cào <b id="cardType"></b> có mệnh giá <b id="cardAmount"></b>đ?</p>
+                    <p>Số tiền nhận được: <b id="cardValue"></b>đ</p>
+                    <p>- <i>THỜI GIAN XỬ L&#221; THẺ --&gt;  5-15 ph&#250;t || Garena, Zing: 15-30 ph&#250;t.</i></p>
+                    <p>- <i>CHỌN SAI MỆNH GI&#193; --&gt; Mất thẻ || Spam thẻ lỗi, đ&#227; sử dụng -&gt; Kh&#243;a nick</i></p>
+                </div>
+                <div class="modal-footer actions">
+                    <button type="button" class="button ui cancel" data-dismiss="modal">Hủy</button>
+                    <button type="button" onclick="submitCard()" class="button ui large blue ok">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer" style="background-color:#212121">
+        <img src="img/logo-con-meo-01-removebg-preview.png" width="480" height="200" style="position:absolute; top:-20px; left:-90px" />
+        <div class="footer1">
+            <h6 style="color:greenyellow; ">Hỗ Trợ</h6>
+            <span style="color:white; font-size:15px;">Nạp tiền</span><br />
+            <span style="color:white;font-size:15px;">Giới thiệu</span><br />
+            <span style="color:white; font-size:15px;">Liên hệ</span><br />
+            <span style="color:white;font-size:15px;">Tư vấn</span><br />
+        </div>
+        <div style="position:relative;top:-35px; ">
+            <br />
+            <span style=" color:#ffd800;font-size:15px; ">
+                <img src="img/icon-commitment.png" width="40" style="position:absolute;top:55px;left:50px;" />
+                Cam kết 100% <br />hàng chất lượng
+            </span>
+            <hr />
+
+
+
+
+            <h6 style="color:greenyellow; ">Mua hàng</h6>
+            <span style="color:white; font-size:15px;">VSGO</span><br />
+            <span style="color:white;font-size:15px;">Liên Minh</span><br />
+            <span style="color:white; font-size:15px;">Liên Quân</span><br />
+            <span style="color:white;font-size:15px;">PUBG</span><br />
+        </div>
+        <div>
+
+            <span style=" color:#ffd800;font-size:15px;">
+
+                <img src="img/icon-global.png" width="40" style="position:absolute;top:75px;left:800px;" />
+                10.000+ giao dịch <br />Đảm bảo uy tín, chất lượng
+            </span>
+
+            <hr />
+
+            <h6 style="color:greenyellow; ">Kết nối với chúng tôi</h6>
+            <div style="font-size:25px;">
+                <a href=""><i class="fab fa-facebook" style="color: azure"></i></a>
+                <a class="gg" href=""><i class="fab fa-google-plus-g" style="color: azure"></i></a>
+                <a href=""> <i class="fab fa-youtube" style="color: azure"></i></a>
+                <a href=""> <i class="fab fa-instagram" style="color: azure"></i></a>
+            </div>
+        </div>
+        <div>
+
+            <span style=" color:#ffd800;font-size:15px;">
+                <img src="img/icon-phone.png" width="30" style="position:absolute;top:75px;left:1180px;" />
+                10.000+ giao dịch <br />Đảm bảo uy tín, chất lượng
+            </span>
+            <hr />
+
+            <h6 style="color:greenyellow; ">GAME IS YOUR LIFE</h6>
+            <span style="color:white;font-size:15px;">We are your best choice</span><br />
+            <span style="color:white;font-size:15px;">Welcome to Hào Gaming</span><br />
+            <i class="fab fa-d-and-d" style="color:azure;"></i>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="ft">
+            <h5 style="position:absolute;top:1px; left:580px; color:gray; font-size:18px;"><b>@All rights reserved.Thiết kế website Hào Gaming</b> </h5>
+        </div>
+    </div>
+    <!--backtop-->
+    <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang"><span class="glyphicon glyphicon-circle-arrow-up text-primary"></span></div>
+    <script>
+        $("#back-to-top").click(function () { return $("body, html").animate({ scrollTop: 0 }, 400), !1 });
+        $(function () { $('[data-toggle="tooltip"]').tooltip() });
+    </script>
+</body>
+</html>
